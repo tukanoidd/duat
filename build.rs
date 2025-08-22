@@ -24,6 +24,8 @@ fn main() -> std::io::Result<()> {
         return Ok(());
     }
 
+    built::write_built_file().unwrap();
+
     let Some(config_path) = dirs_next::config_dir().filter(|p| p.exists()) else {
         return Err(std::io::Error::new(
             std::io::ErrorKind::NotFound,

@@ -1,9 +1,8 @@
 /target
 */target
 /testing
-/Cargo.lock
-*/Cargo.lock
 README.j2
 .cargo/*
 .mod*
 book/book/*
+.direnv

@@ -387,6 +387,12 @@ pub use duat_core::{crate_dir, duat_name, src_crate};
 
 pub use self::setup::{DuatChannel, Initials, MetaStatics, pre_setup, run_duat};
 
+/// Build info regarding duat the library
+pub mod built_info {
+    // The file has been placed there by the build script.
+    include!(concat!(env!("OUT_DIR"), "/built.rs"));
+}
+
 pub mod print;
 mod setup;
 
